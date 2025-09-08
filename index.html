@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abdul-Quadri Ayomide Al-Ameen (MiideOba)</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="nav-wrap">
+    <div class="container nav-inner">
+      <div class="brand">
+        <a href="#home">MiideOba</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+
+      <nav id="main-nav" class="main-nav">
+        <a href="#home">Homepage</a>
+        <a href="#about">About Me</a>
+        <a href="#memories">Memories</a>
+        <a href="#reach">Reach Me</a>
+        <a href="#art">Check My Art</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HOME / HERO -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 class="fullname">Abdul-Quadri Ayomide Al-Ameen <span class="nick">(MiideOba)</span></h1>
+          <p class="tagline">Student leader · Agri-tech enthusiast · Writer</p>
+          <a class="btn" href="#memories">See Memories</a>
+        </div>
+
+        <!-- Large rectangular photo (replace profile.jpg) -->
+        <figure class="hero-photo-wrap">
+          <img src="profile.jpg" alt="Abdul-Quadri Ayomide Al-Ameen" class="hero-photo">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Abdul-Quadri Ayomide Al-Ameen, popularly known as Sen. MiideOba, is an indigene
+              of Oke-Ogun, Oyo State, Nigeria, born into the Al-Ameen family on September 19.
+              He began his education at Muslim Association of Nigeria (MAN) Primary School, Okeho,
+              later completed primary in Lagos at Lad-Ikhlass, served as Social Prefect, and
+              graduated from MAN Secondary School, Egbeda.
+            </p>
+
+            <p>
+              He is a recent graduate of Agricultural Extension and Rural Sociology (Olabisi Onabanjo University),
+              finishing with Second-Class Upper (CGPA 4.02). He served as Class Rep, two-term OOUSU Senator,
+              Coordinator of Departmental Association, Vice President of NAAS OOU, and 35th President of NAAS OOU.
+              Also served as Vice President of the Leo Club and is a certified First-Tier Responder in Mental Health.
+            </p>
+
+            <p>
+              His leadership programs include NAAS Agro-Summit 2024, NAAS Ojude Faaji Cultural Festival,
+              Freshers’ Week, NAAS Super League, Provost Cup, War Against Drug Abuse Seminar (with NDLEA), welfare projects,
+              tutorials, and student security advocacy. He continues as an agri-tech enthusiast, writer, volunteer and speaker.
+            </p>
+          </div>
+
+          <aside class="about-facts">
+            <ul>
+              <li><strong>Campus role:</strong> 35th President, NAAS OOU</li>
+              <li><strong>Degree:</strong> Agric. Extension & Rural Sociology (2:1, 4.02)</li>
+              <li><strong>Interests:</strong> Agri-tech, Leadership, Writing</li>
+              <li><strong>Certs:</strong> Mental Health Responder, Soft Skills (Jobberman)</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMORIES (gallery grid with 30 images) -->
+    <section id="memories" class="section section-dark">
+      <div class="container">
+        <h2>Memories That Shaped Me</h2>
+        <p class="muted">Click any image to view it larger and read the caption.</p>
+
+        <div class="gallery-grid" id="gallery">
+          <!-- 30 images — replace sources with your uploaded images (memories/photo1.jpg ... memories/photo30.jpg) -->
+          <!-- Each item uses data-caption for the lightbox caption -->
+          <!-- I'll include 30 placeholders — change filenames & captions as needed -->
+          <script>
+            // We'll inject the 30 <figure> elements via script below to keep HTML shorter.
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lb-close" aria-label="Close">✕</button>
+      <button class="lb-prev" aria-label="Previous">‹</button>
+      <figure class="lb-figure">
+        <img id="lb-img" src="" alt="">
+        <figcaption id="lb-caption"></figcaption>
+      </figure>
+      <button class="lb-next" aria-label="Next">›</button>
+    </div>
+
+    <!-- REACH ME -->
+    <section id="reach" class="section">
+      <div class="container">
+        <h2 style="font-size:40px">REACH ME</h2>
+
+        <div class="social-grid">
+          <a href="https://www.linkedin.com/" target="_blank" class="social">
+            <!-- simple SVG icon -->
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3a2 2 0 11.001 3.999A2 2 0 014 3zM2 8h4v12H2zM9 8h3.8v1.7h.1c.5-.9 1.8-1.9 3.6-1.9 3.8 0 4.5 2.4 4.5 5.5V20h-4v-5.2c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V20H9z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://x.com/miideoba" target="_blank" class="social">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.9c-.7.3-1.3.6-2 0 .7-.2 1.2-.8 1.3-1.4-.7.4-1.5.6-2.3.7A3.82 3.82 0 0015.5 4c-2.2 0-4 1.8-4 4 0 .3 0 .7.1 1.1C8 9.1 5.1 7.6 3.2 5.1c-.4.7-.6 1.4-.6 2.3 0 1.4.7 2.7 1.8 3.4-.6 0-1.1-.2-1.6-.5 0 2.1 1.5 3.8 3.6 4.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3 2.3-1.2.9-2.6 1.5-4.1 1.5H4c2 1.3 4.3 2 6.8 2 8.2 0 12.6-6.8 12.6-12.6v-.6c.9-.7 1.6-1.6 2.2-2.6-.8.4-1.7.6-2.6.7z"/></svg>
+            <span>X / @miideoba</span>
+          </a>
+
+          <a href="https://instagram.com/officialmiideba" target="_blank" class="social">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.3A4.7 4.7 0 1112 17.7 4.7 4.7 0 0112 8.3zm5.5-.9a1.1 1.1 0 11-1.1 1.1 1.1 1.1 0 011.1-1.1z"/></svg>
+            <span>@officialmiideba</span>
+          </a>
+
+          <a href="mailto:alameenquadri19@gmail.com" class="social">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5a2 2 0 012-2h16a2 2 0 012 2v.2l-10 6.2L2 5.2V5zM2 8.4v10.6A2 2 0 004 21h16a2 2 0 002-2V8.4l-10 6.2L2 8.4z"/></svg>
+            <span>Email</span>
+          </a>
+
+          <a href="https://facebook.com" target="_blank" class="social">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 10-11.6 9.9v-7H8.9V12h2.5V9.7c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg>
+            <span>Miide Oba</span>
+          </a>
+
+          <a href="https://www.tiktok.com/" target="_blank" class="social">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v9.2A4.8 4.8 0 0013.8 17 4.9 4.9 0 0019 12.2V9h-2.3A6.8 6.8 0 0113 6.8V3H9z"/></svg>
+            <span>@officialmiideba</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHECK MY ART -->
+    <section id="art" class="section section-dark">
+      <div class="container">
+        <h2>CHECK MY ART</h2>
+        <p>Here’s where I share my thoughts, articles, and perspectives on student leadership, politics, and agriculture.</p>
+
+        <div class="art-links">
+          <a href="https://substack.com/" target="_blank" class="art-card">
+            <strong>Substack</strong>
+            <p>Oba Memoirs</p>
+          </a>
+
+          <a href="https://appliedworld.net/" target="_blank" class="art-card">
+            <strong>Applied World Nigeria</strong>
+            <p>Search for Abdul-Quadri Ayomide</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        © 2025 Abdul-Quadri Ayomide Al-Ameen (MiideOba) · Built with HTML/CSS/JS
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
